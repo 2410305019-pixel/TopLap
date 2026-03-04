@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop – TopLap</title>
+    <meta name="description"
+        content="Browse all laptops, MacBooks, and tablets at TopLap. Filter by category, brand, and price." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">Top<span>Lap</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="cart-btn" id="cartToggle" aria-label="Cart">
+                🛒 Cart <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- SHOP HERO -->
+    <div class="shop-hero">
+        <div>
+            <h1>Our <span>Full Collection</span></h1>
+            <p>Browse 200+ premium laptops, MacBooks, and tablets.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a> › Shop</div>
+        </div>
+    </div>
+
+    <!-- SHOP LAYOUT -->
+    <div class="shop-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>🔍 Filter Products</h3>
+
+            <div class="filter-group">
+                <h4>Category</h4>
+                <label class="filter-check"><input type="checkbox" value="laptops" class="cat-filter" checked />
+                    Laptops</label>
+                <label class="filter-check"><input type="checkbox" value="macbooks" class="cat-filter" checked />
+                    MacBooks</label>
+                <label class="filter-check"><input type="checkbox" value="tablets" class="cat-filter" checked />
+                    Tablets</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Brand</h4>
+                <label class="filter-check"><input type="checkbox" value="dell" class="brand-filter" checked />
+                    Dell</label>
+                <label class="filter-check"><input type="checkbox" value="apple" class="brand-filter" checked />
+                    Apple</label>
+                <label class="filter-check"><input type="checkbox" value="asus" class="brand-filter" checked />
+                    ASUS</label>
+                <label class="filter-check"><input type="checkbox" value="lenovo" class="brand-filter" checked />
+                    Lenovo</label>
+                <label class="filter-check"><input type="checkbox" value="samsung" class="brand-filter" checked />
+                    Samsung</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Max Price</h4>
+                <div class="price-range">
+                    <input type="range" min="20000" max="300000" value="300000" step="5000" id="priceRange" />
+                    <div class="price-labels"><span>₹20K</span><span id="priceLabel">₹3,00,000</span></div>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Sort By</h4>
+                <select class="sort-select" id="shopSort">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating">Best Rated</option>
+                </select>
+            </div>
+
+            <button class="clear-filters" id="clearFilters">✕ Clear All Filters</button>
+        </aside>
+
+        <!-- Main Shop Content -->
+        <div>
+            <div class="shop-header">
+                <p class="results-count" id="resultsCount">Showing all products</p>
+                <select class="sort-select" id="mobileSort">
+                    <option value="default">Sort: Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating">Best Rated</option>
+                </select>
+            </div>
+            <div class="products-grid" id="shopGrid">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Top<span style="-webkit-text-fill-color:#fff">Lap</span></a>
+                <p>Your trusted destination for premium laptops, MacBooks, and tablets.</p>
+                <div class="socials">
+                    <a href="#" class="social-btn">𝕏</a>
+                    <a href="#" class="social-btn">📷</a>
+                    <a href="#" class="social-btn">f</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="shop.html">Laptops</a></li>
+                    <li><a href="shop.html">MacBooks</a></li>
+                    <li><a href="shop.html">Tablets</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <span>TopLap</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CART -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>🛒 Your Cart</h3>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer" id="cartFooter" style="display:none">
+            <div class="cart-total-row"><span>Total:</span><span id="cartTotal">₹0</span></div>
+            <button class="checkout-btn" onclick="handleCheckout()">Checkout 🚀</button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"><span class="toast-icon">✅</span><span id="toastMsg">Added to cart!</span></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Init shop page
+        renderShopGrid();
+        initShopFilters();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TopLap – Premium Laptops, MacBooks & Tablets</title>
+  <meta name="description" content="TopLap – Your destination for premium laptops, MacBooks, and tablets. Shop the latest tech at unbeatable prices." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="index.html" class="logo">Top<span>Lap</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+        🛒 Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">🚀 New Arrivals 2025</div>
+      <h1>Next-Level Tech<br><span>At Your Fingertips</span></h1>
+      <p>Discover the finest laptops, MacBooks, and tablets engineered for performance, design, and portability. Power your passion with TopLap.</p>
+      <div class="hero-btns">
+        <a href="shop.html" class="btn-primary">Shop Now →</a>
+        <a href="about.html" class="btn-outline">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Products</p>
+        </div>
+        <div class="stat-item">
+          <h3>50K+</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="stat-item">
+          <h3>4.9★</h3>
+          <p>Average Rating</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img src="images/laptop.png" alt="Featured Laptop" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories">
+    <div class="section-header">
+      <span class="section-tag">Browse</span>
+      <h2>Shop by <span>Category</span></h2>
+      <p>Find exactly what you need from our curated collections.</p>
+    </div>
+    <div class="cats-grid">
+      <a href="shop.html?cat=laptops" class="cat-card">
+        <div class="cat-icon">💻</div>
+        <h3>Laptops</h3>
+        <p>Gaming, business, and ultrabook laptops for every need.</p>
+        <span class="cat-count">120+ Models</span>
+      </a>
+      <a href="shop.html?cat=macbooks" class="cat-card">
+        <div class="cat-icon">🍎</div>
+        <h3>MacBooks</h3>
+        <p>The iconic Apple MacBook lineup — Air, Pro, and more.</p>
+        <span class="cat-count">30+ Models</span>
+      </a>
+      <a href="shop.html?cat=tablets" class="cat-card">
+        <div class="cat-icon">📱</div>
+        <h3>Tablets</h3>
+        <p>iPads, Android tablets, and 2-in-1 convertibles.</p>
+        <span class="cat-count">80+ Models</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section class="featured">
+    <div class="section-header">
+      <span class="section-tag">Top Picks</span>
+      <h2>Featured <span>Products</span></h2>
+      <p>Hand-picked bestsellers loved by thousands of customers.</p>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="laptops">Laptops</button>
+      <button class="filter-tab" data-filter="macbooks">MacBooks</button>
+      <button class="filter-tab" data-filter="tablets">Tablets</button>
+    </div>
+    <div class="products-grid" id="featuredGrid">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="features">
+    <div class="section-header">
+      <span class="section-tag">Why TopLap</span>
+      <h2>We Go the <span>Extra Mile</span></h2>
+      <p>Everything we do is designed to give you the best tech shopping experience.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🚚</span>
+        <h3>Free Express Delivery</h3>
+        <p>Get your device delivered to your door within 2-3 business days, absolutely free.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <h3>2-Year Warranty</h3>
+        <p>Every product comes backed by an industry-leading 2-year comprehensive warranty.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔄</span>
+        <h3>Easy Returns</h3>
+        <p>Not satisfied? Return within 30 days, no questions asked, full refund guaranteed.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💬</span>
+        <h3>24/7 Support</h3>
+        <p>Our tech experts are available around the clock to help you with any questions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEALS ===== -->
+  <section class="deals">
+    <div class="deals-inner">
+      <div class="deals-content">
+        <span class="section-tag">⚡ Flash Sale</span>
+        <h2>Deal of the<br><span>Week!</span></h2>
+        <p>Grab our top-rated gaming laptop at an exclusive limited-time price. Don't miss this incredible offer!</p>
+        <div class="countdown">
+          <div class="count-box"><span id="cH">00</span><p>Hours</p></div>
+          <div class="count-box"><span id="cM">00</span><p>Mins</p></div>
+          <div class="count-box"><span id="cS">00</span><p>Secs</p></div>
+        </div>
+        <a href="shop.html" class="btn-primary">Grab the Deal →</a>
+      </div>
+      <div class="deals-product">
+        <img src="images/laptop2.png" alt="Deal Laptop" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="section-header">
+      <span class="section-tag">Reviews</span>
+      <h2>What Our <span>Customers Say</span></h2>
+      <p>Real reviews from real people who love their TopLap purchases.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="review">Ordered a MacBook Pro and it arrived in perfect condition within 2 days. The packaging was premium and the price was unbeatable. TopLap is now my go-to for all tech!</p>
+        <div class="testimonial-header">
+          <div class="avatar">A</div>
+          <div><h4>Aarav Sharma</h4><p>Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="review">The gaming laptop I bought is absolutely incredible. Runs everything smoothly, looks stunning, and the customer support helped me choose the right model. 10/10!</p>
+        <div class="testimonial-header">
+          <div class="avatar">P</div>
+          <div><h4>Priya Mehta</h4><p>Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="testimonial-stars">★★★★☆</div>
+        <p class="review">Got my iPad Pro from TopLap at a great price. The overall experience was smooth and I'm really happy with my purchase. Will definitely shop here again!</p>
+        <div class="testimonial-header">
+          <div class="avatar">R</div>
+          <div><h4>Rohan Verma</h4><p>Verified Buyer</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <span class="section-tag">Newsletter</span>
+      <h2>Stay in the <span>Loop</span></h2>
+      <p>Subscribe for exclusive deals, new arrivals, and tech tips delivered straight to your inbox.</p>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Enter your email address" required id="nlEmail" />
+        <button type="submit">Subscribe 🎯</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Top<span style="-webkit-text-fill-color:#fff">Lap</span></a>
+        <p>Your trusted destination for premium laptops, MacBooks, and tablets. Quality tech delivered with care.</p>
+        <div class="socials">
+          <a href="#" class="social-btn" title="Twitter">𝕏</a>
+          <a href="#" class="social-btn" title="Instagram">📷</a>
+          <a href="#" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?cat=laptops">Laptops</a></li>
+          <li><a href="shop.html?cat=macbooks">MacBooks</a></li>
+          <li><a href="shop.html?cat=tablets">Tablets</a></li>
+          <li><a href="shop.html">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>TopLap</span>. All rights reserved. Made with 💙 for tech lovers.</p>
+    </div>
+  </footer>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>🛒 Your Cart</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total-row"><span>Total:</span><span id="cartTotal">₹0</span></div>
+      <button class="checkout-btn" onclick="handleCheckout()">Checkout 🚀</button>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✅</span>
+    <span id="toastMsg">Added to cart!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
