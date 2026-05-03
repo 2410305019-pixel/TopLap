@@ -275,6 +275,47 @@
     <span id="toastMsg">Added to cart!</span>
   </div>
 
+
+  <!-- ===== CHATBOT WIDGET ===== -->
+  <div id="chatbot-widget">
+    <div id="chatbot-window">
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/JonvJYSqq4-qjOb5MCHRj"
+        title="TopLap Support Chat"
+        loading="lazy"
+      ></iframe>
+    </div>
+    <button id="chatbot-toggle" aria-label="Open chat support" aria-expanded="false">
+      <!-- Chat icon -->
+      <svg class="chat-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+      </svg>
+      <!-- Close icon -->
+      <svg class="close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
+    </button>
+    <span id="chatbot-label">Need help? Chat with us!</span>
+  </div>
+  <script>
+    (function() {
+      var btn    = document.getElementById('chatbot-toggle');
+      var win    = document.getElementById('chatbot-window');
+      var label  = document.getElementById('chatbot-label');
+      var isOpen = false;
+      // Hide label after 4 s
+      setTimeout(function(){ label.classList.add('hidden'); }, 4000);
+      btn.addEventListener('click', function() {
+        isOpen = !isOpen;
+        btn.classList.toggle('open', isOpen);
+        win.classList.toggle('open', isOpen);
+        btn.setAttribute('aria-expanded', isOpen);
+        label.classList.add('hidden');
+      });
+    })();
+  </script>
+
   <script src="script.js"></script>
 </body>
 </html>
+
